@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive pricing component | Frontend Mentor Challenge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <!-- Css File -->
+   <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+  <!-- Header Start -->
+  <header class="header">
+    <img src="./images/pattern-circles.svg" alt="pattern-circles" class="logo">
+    <h1 class="heading">Simple, traffic-based pricing</h1>
+    <p class="Introductory">Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <!-- Header End -->
+  <main>
+  <!-- Form Start -->
+  <div class="container">
+    <form  method="GET" class="form" id="form">
+      <div class="pricing-palns">
+        <p class="Pageviews"><span>100k</span> Pageviews</p>
+        <input type="range" name="range" id="range" min="0" max="5" step="1" value="2" class="myrange" aria-label="select your plan">
+          <p class="price"><span>$12.00</span> /month</p>
+        </div>
+        <div class="toogle">
+          <p class="monthly">Monthly Billing</p>
+          <input type="checkbox" name="toogle-btn" id="toogle-btn" onchange="tooglePlan()"  >
+          <label for="toogle-btn">Yearly Billing</label>
+        </div>
+        <div class="subscibe">
+          <ul class="featuer">
+            <li class="featuer-item">
+              <img src="./images/icon-check.svg" alt="icon-check">
+              <p>Unlimited websites</p>
+            </li>
+            <li class="featuer-item">
+              <img src="./images/icon-check.svg" alt="icon-check">
+              <p>100% data ownership</p>
+            </li>
+            <li class="featuer-item">
+              <img src="./images/icon-check.svg" alt="icon-check">
+              <p>Email reports</p>
+            </li>
+            
+          </ul> 
+          <button type="submit" class="submit-btn">Start my trial</button>
+        </div>
+      </form>
+    
+      <div class="succsess-msg">
+        <div class="congrats">
+          <img src="./images/celebrate.png" alt="celebrate" width="45" height="45">
+          <h3 class="congrats">"Thank you for subcribing"</h3>
+          <span class="star">&#9733 &#9733 &#9733</span>
+        </div>
+        <div class="info">
+          <p class="plan" >Plan Selected: <span id="plan-selected"></span></p>
+          <p class="plan" >Billing Cycle: <span id="billing-cycle"></span></p>
+          <p class="plan" >Price: <span id="plan-price"></span></p>
+          <p class="plan" >Binefits: <span id="plan-binefits">Full access to all featuers, 24/7 support</span></p>
+        </div>
+        <div class="done-btn">
+          <button type="button" class="btn">Done</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Form End -->
+  </main>
+
+
+  <!-- Footer Start -->
+  <footer class="attribution">
+    <small>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"> Frontend Mentor</a>. 
+      Coded by <a href="http://gitgub/alexproman" target="_blank" rel="noopener noreferrer"> Mohamed Hamid</a>.
+    </small>
+    
+  </footer>
+  <!-- Footer Start -->
+   
+   <!-- Js File -->
+  <script src="main.js"></script>
+</body>
+</html>
